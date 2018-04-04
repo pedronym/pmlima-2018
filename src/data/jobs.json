@@ -1,0 +1,50 @@
+[
+  {
+      "name": "7egend",
+      "title": "Senior Front-End Developer",
+      "description": "Working at 7egend building rich web applications and services using React JS and the most up-to-date web technologies available",
+      "date": "March 2018 - Present Day",
+      "link": "https://7egend.cr"
+  },
+  {
+      "name": "iMedicare",
+      "title": "Senior Front-End Engineer",
+      "description": "Working for iMedicare building and maintaining large scale web apps used by pharmacies. Using Ember with EMBL templates and SASS styling.",
+      "date": "March 2017 - Present Day",
+      "link": "https://www.imedicare.com"
+  },
+  {
+      "name": "EuroNext",
+      "title": "Senior UI Developer",
+      "description": "Working at Euronext's Porto Hub developing single page applications and web services focused on pioneering the evolution of financial technology.",
+      "date": "October 2016 - February 2017",
+      "link": "https://www.euronext.com"
+  },
+  {
+      "name": "Sonae BIT",
+      "title": "Front-End Developer",
+      "description": "Worked as a Front-End Developer on the Sonae BIT Digital Channels Team and collaborating with several Sonae brands to build modern, fast, scalable, mobile ready websites.",
+      "date": "October 2014 - September 2016",
+      "link": "https://www.linkedin.com/showcase/bit-sonae/"
+  },
+  {
+      "name": "Sonae SportZone",
+      "title": "UX/UI Designer",
+      "description": "Working on the user flow and experience for the new Sport Zone e-commerce platform, responsible for the creation of all promotional material ranging from newsletters to banners, quality control and interaction design.",
+      "date": "January 2013 - September 2014",
+      "link": "https://www.sportzone.pt/empresa"
+  },
+  {
+      "name": "This is Pacifica",
+      "title": "Web Developer",
+      "description": "Worked with HTML5, CSS3, JavaScript, Adobe AIR and Adobe Flash building rich content websites/applications that retrieve dynamic data from back-end systems and also integrating websites to fetch data using Facebook, Twitter and Flickr API's.",
+      "date": "November 2010 - April 2012",
+      "link": "http://thisispacifica.com/"
+  },
+  {
+      "name": "Daydream.pt",
+      "title": "Flash Developer",
+      "description": "Worked mainly with Adobe Flash and Actionscript 3.0 building multimedia driven websites and applications, integrating them with back-end systems, SEO optimization and multi-language support.",
+      "date": "December 2007 - October 2010"
+  }
+]

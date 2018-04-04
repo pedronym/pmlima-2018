@@ -1,7 +1,11 @@
 module.exports = {
     "env": {
+        "node": true,
         "browser": true,
         "es6": true
+    },
+    "globals": {
+      "graphql": true
     },
     "extends": ["eslint:recommended", "plugin:react/recommended"],
     "parserOptions": {

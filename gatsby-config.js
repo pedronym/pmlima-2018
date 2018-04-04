@@ -1,6 +1,14 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Hello from Portugal!',
   },
-  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-sass']
+  plugins: [{
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'jobs',
+      path: path.join(__dirname, '/src/data/jobs.json'),
+    },
+  }, 'gatsby-plugin-react-helmet', 'gatsby-plugin-sass', 'gatsby-transformer-json']
 };
