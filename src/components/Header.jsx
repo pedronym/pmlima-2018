@@ -6,8 +6,8 @@ class Header extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { 
-      nav: Navigation 
+    this.state = {
+      nav: Navigation
     };
   }
 
@@ -23,7 +23,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
+      <header className="header">
         {this.renderNavigation()}
       </header>
     );

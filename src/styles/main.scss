@@ -8,6 +8,10 @@
 /* Bulma Framework */
 @import '../../node_modules/bulma/bulma';
 
-/* Project Styles and Components */
+/* Project Global Styles */
 @import "global";
 @import "utils";
+
+/* Project Components */ 
+@import "components/header";
+@import "components/hero";
