@@ -4,16 +4,13 @@
 
 .hero-body {
   z-index: 1;
+  margin-top: 1rem;
 }
 
-canvas.sketch {
-  position: absolute;
-}
-
-.intro-huge {
+.hero-huge {
   font-size: 32vw;
 }
 
-.intro-downloads {
+.hero-downloads {
   margin-top: 3rem;
 }

@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+
+/* Icons */
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin';
+
+/* Data */
 import { Navigation } from '../data/Header';
 
 class Header extends Component {
@@ -14,9 +20,12 @@ class Header extends Component {
   renderNavigation() {
     const { nav } = this.state;
 
-    return nav.map((el, idx) => {
+    return nav.map((item, idx) => {
       return (
-        <p key={idx}>{el.title}</p>
+        <a className="nav__item" key={idx}>
+          <FontAwesomeIcon icon={faLinkedin} />
+          {item.title}
+        </a>
       );
     });
   }
@@ -24,7 +33,9 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-        {this.renderNavigation()}
+        <nav className="nav">
+          {this.renderNavigation()}
+        </nav>
       </header>
     );
   }
