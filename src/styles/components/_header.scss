@@ -2,3 +2,12 @@
   z-index: 1;
   position: absolute;
 }
+
+.nav__item {
+ color: $primary;
+}
+
+.nav__item-icon {
+  width: 26px;
+  height: auto;
+}

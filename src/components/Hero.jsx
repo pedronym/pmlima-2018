@@ -7,26 +7,49 @@ import ParticlesConfig from '../data/Particles.json';
 
 class Hero extends Component {
 
-  componentDidMount() {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      text: 'Hello'
+    };
+  }
 
+  componentDidMount() {
+    this.helloTimer = setInterval(
+      () => this.tick(),
+      500
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.helloTimer);
+  }
+
+  tick() {
+    const newText = this.state.text === 'Hello' ? 'Hello_' : 'Hello';
+    
+    this.setState({
+      text: newText
+    });
   }
 
   render() {
     return (
       <section className="hero is-medium is-dark is-bold">
 
-        <Particles params={ParticlesConfig} style={{
+        {/* <Particles params={ParticlesConfig} style={{
           width: '100%',
           height: '100%',
           position: 'absolute',
           zIndex: 0
-        }} />
+        }} /> */}
 
         <div className="hero-body container">
 
-          <h1 className="hero-huge title">Hello</h1>
+          <h1 className="hero-greeting">{this.state.text}</h1>
 
-          <h2 className="is-size-4">My name is <strong>Pedro Lima</strong> and Im a <strong>Front-End Developer</strong> and <strong>UX/UI Designer </strong>currently working from <strong>Porto</strong>, Portugal.</h2>
+          {/* <h2 className="is-size-4">My name is <strong>Pedro Lima</strong> and Im a <strong>Front-End Developer</strong> and <strong>UX/UI Designer </strong>currently working from <strong>Porto</strong>, Portugal.</h2>
 
           <br />
 
@@ -40,7 +63,7 @@ class Hero extends Component {
             </a>
 
             <div><small>PDF File - Last update: January 2018</small></div>
-          </div>
+          </div> */}
 
         </div>
       </section>

@@ -19,7 +19,7 @@ class Header extends Component {
     return nav.map((item, idx) => {
       return (
         <a className="nav__item" key={idx} title={item.title}>
-          <i className={`fas ${item.icon}`} />
+          <img className="nav__item-icon" src={`../assets/icons/${item.icon}.svg`} />
           {item.title}
         </a>
       );
