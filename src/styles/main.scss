@@ -6,7 +6,10 @@
 @import "settings";
 
 /* Bulma Framework */
-@import '../../node_modules/bulma/bulma';
+@import "../../node_modules/bulma/bulma";
+
+/* Project Icons */
+@import "icons/fontawesome";
 
 /* Project Global Styles */
 @import "global";

@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 
-/* Icons */
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin';
-
 /* Data */
 import { Navigation } from '../data/Header';
 
@@ -22,8 +18,8 @@ class Header extends Component {
 
     return nav.map((item, idx) => {
       return (
-        <a className="nav__item" key={idx}>
-          <FontAwesomeIcon icon={faLinkedin} />
+        <a className="nav__item" key={idx} title={item.title}>
+          <i className={`fas ${item.icon}`} />
           {item.title}
         </a>
       );
