@@ -2,10 +2,18 @@ $font-primary: 'Lato';
 $font-secondary: 'Fira Mono';
 
 $light: #EEF8FF;
-$light--alt: #D1F5FF;
-$dark: #121212;
+$dark: #383838;
+$darker: #2B2B2B;
+$darkest: #272727;
 
-$primary: #34F6F2;
-$primary--alt: #78E3FD;
+$primary: #6AFFC6;
+$gray: #777777;
 
-$secondary: #7D53DE;
+$spacing: 1rem;
+
+$text-small: 0.9rem;
+$text-base: 1.25rem;
+
+$timing-fast: 0.2s;
+$timing-normal: 0.5s;
+$timing-slow: 0.8s;

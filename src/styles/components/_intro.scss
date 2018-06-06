@@ -1,0 +1,73 @@
+$sectionColor: $darkest;
+
+.intro {
+  @include dropshadow;
+  position: relative;
+  z-index: 10;
+  background-color: $sectionColor;
+  padding: 4rem 0; 
+
+  &:before {
+    content: "\A";
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    top: -18px;
+    height: 10px;
+    border-top: 20px solid transparent;
+    border-right: 50vw solid $sectionColor;
+  }
+
+  &:after {
+    content: "\A";
+    position: absolute;
+    left: 0;
+    width: 50vw;
+    top: -18px;
+    height: 10px;
+    border-top: 20px solid transparent;
+    border-left: 50vw solid $sectionColor;
+  }
+}
+
+.land {
+  fill: red;
+  stroke: red;
+}
+.intro-container {
+
+}
+
+.intro-heading {
+  font-size: 1.5rem;
+}
+
+.intro-downloads {
+  width: 100%;
+  text-align: center;
+}
+
+.intro-downloads__btn {
+  @include dropshadow;
+  text-align: center;
+  display: block;
+  color: $darker;
+  width: 100%;
+  background-color: $primary;
+  font-weight: 800;
+  padding: $spacing $spacing * 2;
+  border-radius: 30px;
+
+  .icon {
+    transition: transform $timing-fast ease-out;
+    margin-left: $spacing;
+    font-size: 1.8rem;
+    transform: translate(0, 4px) rotate(0deg);
+  }
+
+  &:hover {
+    .icon {
+      transform: translate(0, 4px) rotate(90deg);
+    }
+  }
+}

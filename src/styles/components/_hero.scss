@@ -1,17 +1,54 @@
 .hero {
   position: relative;
+  height: 100vh;
 }
 
-.hero-body {
-  z-index: 1;
-  margin-top: 1rem;
+.hero-fixed {
+  transition: all $timing-normal ease-out;
+  position: fixed;
+  z-index: 0;
+  background-image: url(/assets/images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .hero-greeting {
-  font-size: 5rem;
-  font-family: $font-secondary;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
-.hero-downloads {
-  margin-top: 3rem;
+.hero-greeting__text {
+  font-size: 5rem;
+  font-family: $font-secondary;
+  margin: 0 auto;
+  position: relative;
+  top: -10%;
+  width: 284px;
+}
+
+.hero-continue {
+  margin-top: 70vh;
+  text-align: center;
+}  
+
+.hero-continue__text {
+  transition: color $timing-normal;
+}
+
+.hero-continue__icon {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 6rem;
+}
+
+.hero--faded {
+  opacity: 0;
+  transform: translateY(-50px);
 }

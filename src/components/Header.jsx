@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 /* Data */
 import { Navigation } from '../data/Header';
-
 class Header extends Component {
 
   constructor(props) {

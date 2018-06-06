@@ -1,12 +1,17 @@
+$ionicons-font-path: "~ionicons/dist/fonts";
+
+/* Ionicons */
+@import "~ionicons/dist/scss/ionicons";
+
 /* Bulma Initial Variables and Functions */
-@import "../../node_modules/bulma/sass/utilities/initial-variables";
-@import "../../node_modules/bulma/sass/utilities/functions";
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
 
 /* Bulma Initial Variables Overrides */
 @import "settings";
 
 /* Bulma Framework */
-@import "../../node_modules/bulma/bulma";
+@import "~bulma/bulma";
 
 /* Project Global Styles */
 @import "global";
@@ -15,3 +20,6 @@
 /* Project Components */ 
 @import "components/header";
 @import "components/hero";
+@import "components/intro";
+@import "components/map";
+@import "components/about";

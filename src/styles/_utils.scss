@@ -1,0 +1,36 @@
+.is-primary {
+  color: $primary;
+}
+
+.is-white {
+  color: $white;
+}
+
+.is-muted {
+  color: $gray;
+}
+
+.is-bold {
+  font-weight: 700;
+}
+
+.mt-1 {
+  margin-top: $spacing;
+}
+
+.mt-2 {
+  margin-top: $spacing * 2;
+}
+
+.t-base {
+  font-size: $text-base;
+}
+
+.t-small {
+  font-size: $text-small;
+}
+
+.pad-x {
+  padding-left: $spacing / 2;
+  padding-right: $spacing / 2;
+}
