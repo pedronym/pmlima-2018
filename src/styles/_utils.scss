@@ -1,3 +1,17 @@
+@mixin margin-helper {
+  @for $i from 0 through $margins-limit {
+    .mt-#{$i+1} { margin-top: $spacing + $i; }
+    .mb-#{$i+1} { margin-bottom: $spacing + $i; }
+  }
+}
+
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include margin-helper;
+
 .is-primary {
   color: $primary;
 }
@@ -10,16 +24,12 @@
   color: $gray;
 }
 
+.is-light {
+  font-weight: 100;
+}
+
 .is-bold {
   font-weight: 700;
-}
-
-.mt-1 {
-  margin-top: $spacing;
-}
-
-.mt-2 {
-  margin-top: $spacing * 2;
 }
 
 .t-base {

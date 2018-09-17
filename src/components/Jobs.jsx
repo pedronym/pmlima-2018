@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
+import JobsItem from './jobs/JobsItem';
+
+import JobData from './../data/jobs.json';
 
 class Jobs extends Component {
   render() {
-    const post = this.props.data;
-    return <div>Jobs {post}</div>;
+    return (
+      <div className="section__jobs">
+        <div>
+          {JobData.map((job, idx) =>
+            <JobsItem key={idx} idx={idx} job={job} />
+          )}
+        </div>
+      </div>
+    );
   }
 }
 

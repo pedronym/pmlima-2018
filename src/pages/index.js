@@ -8,22 +8,26 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 import About from '../components/About';
+import Jobs from '../components/Jobs';
 
 class IndexPage extends Component {
   render() {
     return (
+
       <div className="main">
         <Header />
-        <Particles params={ParticlesConfig} style={{
+        {/* <Particles params={ParticlesConfig} style={{
           width: '100vw',
           height: '100vh',
           position: 'absolute',
           zIndex: 1
-        }} />
+        }} /> */}
         <Hero />
         <Intro />
         <About />
+        <Jobs />
       </div>
+
     );
   }
 }

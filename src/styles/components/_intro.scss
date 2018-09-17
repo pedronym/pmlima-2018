@@ -1,11 +1,13 @@
 $sectionColor: $darkest;
 
-.intro {
-  @include dropshadow;
+.section__intro {
+  // @include dropshadow;
+
   position: relative;
   z-index: 10;
   background-color: $sectionColor;
-  padding: 4rem 0; 
+  padding: 4rem 0;
+  overflow-y: hidden;
 
   &:before {
     content: "\A";
@@ -34,6 +36,7 @@ $sectionColor: $darkest;
   fill: red;
   stroke: red;
 }
+
 .intro-container {
 
 }
@@ -49,12 +52,13 @@ $sectionColor: $darkest;
 
 .intro-downloads__btn {
   @include dropshadow;
+
   text-align: center;
   display: block;
   color: $darker;
   width: 100%;
   background-color: $primary;
-  font-weight: 800;
+  font-weight: 700;
   padding: $spacing $spacing * 2;
   border-radius: 30px;
 

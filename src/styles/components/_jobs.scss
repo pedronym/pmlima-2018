@@ -1,0 +1,45 @@
+.section__jobs {
+  text-align: center;
+}
+
+.job-item {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid $dark;
+  border-bottom: 1px solid $dark;
+}
+
+.job-item--alt {
+  background-color: $darkest;
+}
+
+.job-item__thumb {
+  @extend .m-auto;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 92px;
+  height: 92px;
+  border: 1px solid $dark;
+  overflow: hidden;
+}
+
+.job-item__name {
+  font-size: 33px;
+  font-weight: 100;
+}
+
+.job-item__title {
+  font-size: $size-4;
+  font-weight: $weight-bold;
+  color: $primary;
+}
+
+.job-item__description {
+    font-size: $size-5;
+}
+
+.job-item__date {
+  font-size: $size-7;
+  font-weight: $weight-bold; 
+  color: $gray;
+}

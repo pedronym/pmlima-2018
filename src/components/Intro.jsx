@@ -8,7 +8,7 @@ class Intro extends Component {
   render() {
     const highlightStyle = 'is-primary is-bold';
     return (
-      <section className="intro">
+      <section className="section__intro">
         <Map />
         <div className="container intro-container">
 
@@ -41,10 +41,10 @@ class Intro extends Component {
             <div className="intro-downloads column is-12 mt-2">
               <a className="intro-downloads__btn t-base">
                 <span className="">Download my CV</span>
-                <i className="icon ion-ios-arrow-dropright-circle"></i>
+                <i className="icon ion-android-arrow-dropright-circle"></i>
               </a>
 
-              <p className="t-small is-bold mt-1 is-muted">PDF File - Last Updated on: January 2018</p>
+              <p className="is-size-7 is-bold mt-2 is-muted">PDF File - Last Updated on: January 2018</p>
             </div>
           </div>
 

@@ -1,0 +1,8 @@
+.section--padded {
+  padding-top: $spacing * 6;
+  padding-bottom: $spacing * 6;
+}
+
+.section--bordered {
+  border-top: 2px solid $dark;
+}

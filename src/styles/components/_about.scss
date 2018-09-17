@@ -1,5 +1,23 @@
+.section__about {
+  padding-bottom: 1rem;
+}
+
 .profile-image {
+  max-width: 128px;
+  margin-left: auto;
+  margin-right: auto;
+
   img {
     border-radius: 50%;
   }
+}
+
+.about-content, .about-text {
+  text-align: center;
+}
+
+.about-continue__icon {
+  font-size: 5rem;
+  height: auto;
+  color: $gray;
 }

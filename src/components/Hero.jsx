@@ -43,7 +43,7 @@ class Hero extends Component {
     const textClass = this.state.faded ? 'is-primary' : 'is-light';
 
     return (
-      <section className="hero">
+      <section className="section__hero">
 
         <div className={`hero-fixed ${fadedClass}`}>
           <div className="hero-greeting">
